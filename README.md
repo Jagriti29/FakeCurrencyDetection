@@ -1,47 +1,29 @@
-# FakeCurrencyDetection
-A deep learning-based system to detect fake Indian currency notes using ResNet50 and Streamlit. Upload an image, select the denomination, and get real-time predictions with confidence scores.
-## 🚀 Features
+# Fake Currency Detection System
 
-- 📸 Upload currency note images
-- 💡 Detect if the note is **real or fake**
-- 🧠 Uses **ResNet50-based CNN models**
-- 🌗 Toggle between **Dark Mode** and Light Mode
-- 📜 Keeps detection history for current session
-- 🔍 Suggests safety steps for suspected fake notes
+This project is a deep learning-based web application for detecting counterfeit Indian currency notes using ResNet50 and Streamlit. Users can upload an image of a currency note, select the denomination, and receive a real-time classification (Real or Fake) along with confidence scores. The system is designed for ease of use and can assist in quick verification of currency authenticity.
 
 ---
 
-## 🧠 Technology Stack
+## Features
 
-- Python  
-- Streamlit  
-- TensorFlow / Keras  
-- ResNet50 (Transfer Learning)  
-- PIL & NumPy for image preprocessing  
+- Upload images of ₹50, ₹100, ₹500, or ₹2000 currency notes
+- Real-time prediction of note authenticity (Real or Fake)
+- Pretrained CNN models based on ResNet50 for each denomination
+- Toggle between dark and light mode in the user interface
+- Keeps track of prediction history during the session
+- Provides safety instructions if a fake note is detected
 
 ---
 
-## 🗂️ Project Structure
-.
-├── app.py # Main Streamlit web app
-├── 50rs Identification.ipynb # Model training notebook for ₹50 notes
-├── 100rs identification.ipynb # Model training notebook for ₹100 notes
-├── 500rs Identification.ipynb # Model training notebook for ₹500 notes
-├── 2000rs Identiifcation.ipynb # Model training notebook for ₹2000 notes
-├── model_50rs.keras # Trained model for ₹50
-├── model_100rs.keras # Trained model for ₹100
-├── model_500rs.keras # Trained model for ₹500
-├── model_2000rs.keras # Trained model for ₹2000
+## Technology Stack
 
-## ▶️ How to Run
+- Python
+- Streamlit
+- TensorFlow / Keras
+- ResNet50 (Transfer Learning)
+- PIL & NumPy for image preprocessing
 
-Make sure you have Python and required packages installed. Then run:
-"python -m streamlit run app.py" in the command prompt.
+---
 
-## 🧪 How It Works
+## Project Structure
 
-- Upload an image of a currency note.
-- Select the denomination.
-- The app preprocesses the image.
-- A pretrained ResNet50 model predicts whether it’s Real or Fake.
-- If fake, safety suggestions are displayed.
